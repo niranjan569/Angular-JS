@@ -1,0 +1,22 @@
+<html ng-app="myApp">
+	<head>
+		<title>Dot Notation</title>
+		<script type="text/javascript" src="../libs/angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<div ng-controller="ParentController">
+			<input type="text" ng-model="model.name">
+			This is from parent : {{ model.name }}
+
+			<div ng-controller="ChildController">
+				<input type="text" ng-model="model.name">
+				This is from child : {{ model.name }}
+				<input type="text" ng-model="model1.name1">
+				This is from child : {{ model1.name1 }}
+			</div>
+		</div>
+	</body>
+</html>
+
+
